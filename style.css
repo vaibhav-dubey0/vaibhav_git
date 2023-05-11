@@ -1,0 +1,164 @@
+
+*{
+  margin:2px;
+  padding: 0 px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+display: flex; 
+text-align: center; 
+position: sticky;
+}
+
+#logo img{
+ height: 65px;
+ margin-left: 30px;
+}
+#navbar ul{
+    display: flex;
+} 
+#navbar::before{
+    content: "" ;
+    background-color: pink;
+    position: absolute;
+    height: 9%;
+    width: 100%;
+    z-index: -1;
+}
+#navbar ul li{
+    color: rgb(27, 193, 165);
+ list-style: none;
+ font-size: 1.4rem;
+}
+#navbar ul li a{
+    display:block;
+    padding: 3px 22px;
+    text-decoration:none ; 
+    margin-top: 10px;
+    margin-left: 20px;
+}
+#navbar ul li a:hover{
+    color:red ;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background: url('https://www.shutterstock.com/image-photo/background-cooking-tagliatelle-pasta-ingredients-260nw-1724611486.jpg');
+    height:31vh;
+    z-index: -1;
+    opacity:.89;
+}
+.h-primary{
+ font-size:2rem;
+ padding:12px ;
+}
+#home h1{
+ text-align: center;
+ color: white;
+}
+#home p{
+    color: white;
+}
+.btn{
+    padding: 3px 20px;
+    border: 2px solid white;
+    color:white;
+    margin-top: 8px;
+    font-size: .8rem;
+    border-radius: 9px;
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* service section  */
+.h1service{
+    font-size: 1.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif',serif;
+}
+.services{
+    display: flex;
+    margin:15px;
+}
+.services .box {
+    border: 2px solid brown;
+    padding: 25px;
+    border-radius: 30px;
+    background: color #f2f2f2;;
+    margin-left: 11px;
+}
+.services .box img{
+    height:200px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-top:3px ;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.h2service{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.client-section{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRM2gaSFUasVeJPzFheD3oUk7yhoXXAOXjicdzw0BQKSSMi74H_gU7_aRcgMNFswgoFak&usqp=CAU');
+
+}
+.h1client{
+    text-align: center;
+}
+.client{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.client-item {
+ padding: 5px;
+ margin: 10px;
+  border-radius: 10px;
+}
+.client-item img{
+    height: 176px;
+    border-radius: 15px;
+}
+
+.contact{
+    position: relative;
+}
+.h1contact{
+    text-align: center;
+    padding: 9px;
+    font-size: 1.6rem;
+}
+.contact{
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1__fQux-VQCEomPN5bCJclWjAEyCR_49MZA&usqp=CAU');
+}
+#contact-box{
+    display: flex ;
+    justify-content: center;
+}
+#contact-box input{
+    width: 100%;
+    padding: .5rem;
+  border-radius: 14px;
+  font-size: 1.2rem;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 14px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.9rem;
+}
+
